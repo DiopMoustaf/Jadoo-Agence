@@ -1,0 +1,96 @@
+.menu-navigation ul li a {
+    font-family: Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.design {
+    padding-left: 800px;
+}
+
+.titre {
+    width: 500px;
+    height: 200px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    letter-spacing: -4%;
+    color: #181E4B;
+}
+
+.menu-navigation ul li a:hover {
+    color: white;
+}
+
+.bloc-gauche {
+    width: 630px;
+    height: 535px;
+    margin-left: 1.5em;
+    margin-top: 2em;
+}
+
+.para2 {
+    width: 477px;
+    height: 90px;
+    margin-right: 3em;
+}
+
+.play {
+    padding: 15px;
+}
+
+.play-bloc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button img {
+    background-color: #DF6951;
+    border-radius: 100%;
+}
+
+.bloc-droite {
+    width: 583px;
+    height: 564px;
+
+}
+
+.bloc-droite img {
+    padding-right: 4em;
+}
+
+.titre-section2,.titre-sec4,.titre-sec5{
+    font-family: Volkhov;
+}
+
+.titre-section2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 64.5px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.arriere-plan-bleu{
+    background: transparent;
+    background-color: #ffffff;
+
+}
+
+.bloc1-part-droite-sec4{
+    box-shadow: 10px 50px 80px 10px rgba(240, 240, 240, 0.881);
+}
+
+.bloc2-part-droite-sec4{
+    box-shadow: 20px -20px 90px 20px rgba(240, 240, 240, 0.881);
+}
+
+.bg-subscribe{
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+}
+
+.insta{
+    background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+
+}
