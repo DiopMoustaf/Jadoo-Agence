@@ -3,11 +3,15 @@
     font-weight: 500;
 }
 
-.design {
+.design_container {
     padding-left: 800px;
 }
 
-.titre {
+.menu-resp {
+    display: none;
+}
+
+.titre-sec1 {
     width: 500px;
     height: 200px;
     font-family: 'Volkhov';
@@ -29,7 +33,7 @@
     margin-top: 2em;
 }
 
-.para2 {
+.para2-sec1 {
     width: 477px;
     height: 90px;
     margin-right: 3em;
@@ -50,17 +54,19 @@ button img {
     border-radius: 100%;
 }
 
-.bloc-droite {
+.bloc-droite-sec1 {
     width: 583px;
     height: 564px;
 
 }
 
-.bloc-droite img {
+.bloc-droite-sec1 img {
     padding-right: 4em;
 }
 
-.titre-section2,.titre-sec4,.titre-sec5{
+.titre-section2,
+.titre-sec4,
+.titre-sec5 {
     font-family: Volkhov;
 }
 
@@ -72,25 +78,674 @@ button img {
     text-align: center;
 }
 
-.arriere-plan-bleu{
+.plane, .passport{
+    display: none;
+}
+
+.arriere-plan-bleu {
     background: transparent;
     background-color: #ffffff;
 
 }
 
-.bloc1-part-droite-sec4{
+.bloc1-part-droite-sec4 {
     box-shadow: 10px 50px 80px 10px rgba(240, 240, 240, 0.881);
 }
 
-.bloc2-part-droite-sec4{
+.bloc2-part-droite-sec4 {
     box-shadow: 20px -20px 90px 20px rgba(240, 240, 240, 0.881);
 }
 
-.bg-subscribe{
+.bg-subscribe {
     background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
 }
 
-.insta{
+.insta {
     background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+
+}
+
+/* responsiviter */
+
+@media (max-width: 640px) {
+
+    body {
+        width: 430px !important;
+    }
+
+    .design_container {
+        display: none;
+    }
+
+    .barre-de-nav {
+        margin-top: 20px;
+        width: 430px;
+        margin: 0;
+        /* background-color: rgb(245, 222, 179, 0.8) ; */
+        /* background: linear-gradient( rgb(245, 222, 179, 0.9), rgba(255, 255, 255, 0.2)); */
+    }
+
+    button .material-symbols-outlined svg {
+        margin-top: 10px;
+    }
+
+    .nav-section {
+        border-bottom: none;
+        max-height: 10vh;
+    }
+
+    .nav-section .menu-resp {
+        display: block;
+    }
+
+    .bloc-nav {
+        display: none;
+    }
+
+    .bloc-nav {
+        position: absolute;
+        margin-top: 18em;
+        z-index: 10;
+        right: 15%;
+        height: 250px;
+        width: 96%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #F1A501;
+        /*#F1A501 | #DF6951*/
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .sous-menu-langue {
+        margin-left: 30px;
+        width: 50px;
+        top: 20px;
+    }
+
+    .menu li {
+        padding: 3px;
+        margin: auto;
+    }
+
+    .menu li:hover {
+        background-color: white;
+        color: #F1A501;
+        border-radius: 10px;
+    }
+
+    .menu li a {
+        color: black;
+
+    }
+
+    .bloc-nav.show {
+        display: flex;
+    }
+
+    /* fin navbar */
+
+    .section1 {
+        max-width: 100%;
+        height: 670px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(rgb(245, 222, 179, 0.5), rgb(223, 105, 81, 0.6)),
+            url(Images/Sec1/Image-femme.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .bloc-gauche {
+        width: 370px;
+    }
+
+    .bloc-droite-sec1 {
+        display: none;
+    }
+
+    .para-titre-sec1 {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .titre-sec1 {
+        font-size: 50px;
+        max-width: 400px;
+        height: 100px;
+        font-family: 'Volkhov';
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: -4%;
+        color: #181E4B;
+    }
+
+    .para2-sec1 {
+        width: 380px;
+        height: 90px;
+        margin-top: 7em;
+        color: white;
+    }
+
+    .button-sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-jaune {
+        width: 150px;
+        margin-top: 1.5em;
+        margin-left: 6em;
+        text-align: center;
+    }
+
+    .bloc-play-sec1 {
+        width: 150px;
+        margin-top: 1em;
+        margin-left: 6em;
+        text-align: center;
+    }
+
+    .bloc-play-sec1 p {
+        color: white;
+        font-size: 19px;
+    }
+
+
+    /* fin section1 */
+
+
+    .section2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .contenu-section2 {
+        width: 430px;
+        height: 1400px;
+    }
+
+    .part-1-sec2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .bloc-part-1-sec2 {
+        padding: 0;
+        margin: auto;
+    }
+
+    .part-1-sec2 p {
+        font-size: 13px;
+        margin-top: 2em;
+    }
+
+    .part-1-sec2 h2 {
+        font-size: 27px;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: -16px;
+        line-height: 30px;
+        width: 200px;
+    }
+
+    .design-sec2 {
+        display: none;
+    }
+
+    .part2-sec2{
+        width: 430px;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 7em;
+        margin-left: auto;
+    }
+
+    .bloc1-section2,.bloc3-section2,.bloc4-section2{
+        margin-left: -2.5em;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .entaine{
+        margin-top: -14em;
+    }
+
+    .entaine .bloc-img-titre-para p{
+        margin-top: 30px;
+    }
+
+    .bloc-img-titre-para img,.bloc-img-titre-para img,.bloc-img-titre-para img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .bloc-img-titre-para h3,.bloc-img-titre-para h3,.bloc-img-titre-para h3{
+        font-size: 25px;
+    }
+    
+    .bloc-img-titre-para p,.bloc-img-titre-para p,.bloc-img-titre-para p{
+        font-size: 27px;
+        width: 280px;
+        height: 100px;
+        margin-left: -50px;
+        padding-top: 10px;
+    }
+
+    .parametre{
+        margin-top: 20px;
+    }
+
+    .flights{
+        margin-left: -2.5em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .bloc-flights{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .bloc-flights img{
+        width: 200px;
+    }
+
+    .bloc-flights h3{
+        font-size: 30px;
+    }
+
+    .bloc-flights p{
+        width: 300px;
+        height: 100px;
+        font-size: 25px;
+        padding-top: 15px;
+    }
+
+    .designe-color{
+        position: absolute;
+        left: -20px;
+        bottom: 4px;
+    }
+
+        /* fin section2 */
+
+        .bloc-section3{
+            width: 430px;
+            height: 1400px;
+            margin-top: -6em;
+        }
+
+        .part-1-sec3{
+            width: 100%;
+        }
+
+        .bloc-part-1-sec3{
+            max-width: 430px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .bloc-part-1-sec3 p{
+            font-size: 20px;
+        }
+
+        .part-2-sec3{
+            width: 430px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+        }
+
+        .bloc-part-2-sec3{
+            width: 90%;
+            margin: auto;
+        }
+
+        .italie{
+            width: 90% !important;
+            margin-left: 10px !important;
+        }
+
+        .card-destination{
+            width: 80%;
+            margin-left: 2em;
+
+        }
+
+        .Rome{
+            width: 208px;
+            height: 50px;
+            margin-left: 53px;
+        }
+
+
+
+        .Rome-Italie img{
+                width: 17px;
+        }
+
+        .Rome-Italie p{
+            width: 250px;
+            margin-left: 40px;
+            margin-right: -20px;
+        }
+
+        .griland{
+            /* display: none; */
+            position: absolute;
+            bottom: -158em;
+            left: 16em;
+            width: 120px;
+            height: 200px;
+            opacity: 0.8;
+            z-index: -10;
+            margin-right: 0;
+        }
+
+        .griland img{
+            width: 200px;
+            height: 200px;
+            margin-left: 5.5em;
+            margin-top: -2em;
+        }
+
+        .plane{
+            display: block;
+            position: absolute;
+            bottom: -115em;
+            left: 15em;
+            width: 180px;
+            height: 200px;
+            opacity: 0.8;
+            z-index: -10;
+            margin-right: 0;
+        }
+
+        .plane img{
+            width: 200px;
+            height: 200px;
+            margin-left: 4em;
+            margin-top: -2em;
+        }
+
+        .passport{
+            display: block;
+            position: absolute;
+            bottom: -142em;
+            left: 7em;
+            opacity: 0.8;
+            z-index: -10;
+            width: 150px;
+            height:150px;
+        }
+
+        .passport img{
+            width: 90px;
+            height: 100px;
+            transform: rotate(-20deg); 
+        }
+
+         /* fin section3 */
+        
+        .bloc-sec4{
+            width: 430px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part-gauche{
+            width: 430px;
+        }
+
+        .part-gauche .bloc-1-part-gauche p{
+            width: 90%;
+            margin: auto;
+        }
+
+        .part-gauche .bloc-1-part-gauche h2{
+            width: 50%;
+            margin: auto;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .trois-theme{
+            width: 90%;
+            margin: auto;
+        }
+
+        .part-droite{
+            width: 430px;
+            position: relative;
+        }
+
+        .bloc2-part-droite-sec4{
+            position: absolute;
+            left: 11.5em;
+            width: 240px;
+            height: 120px;
+        }
+
+        /* fin section4 */
+
+        .bloc-section5{
+            width: 430px;
+            height: 1000px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part-gauche-sec5 p{
+            width: 90%;
+            text-align: center;
+        }
+
+        .part-gauche-sec5 h2{
+            width: 70%;
+            font-size: 30px;
+            text-align: center;
+            margin-left: 1.5em;
+            position: relative;
+        }
+
+        .pointier{
+            position: absolute;
+            bottom: -517%;
+            margin-left: 10em;
+        }
+
+        .part-droite-sec5{
+            margin-top: -90px;
+            width: 430px;
+        }
+        .bloc-part-droite-sec5{
+            width: 430px;
+
+        }
+
+        .part-droite-sec5 .bloc-Moustapha{
+            width: 320px;
+            height: 180px;
+            margin-left: -20px;
+        }
+
+        .part-droite-sec5 .bloc-Moustapha .para1{
+            width: 100%;
+            margin-left: -2em;
+            margin-top: -1em;
+        }
+
+        .part-droite-sec5 .bloc-Moustapha h3{
+            width: 100%;
+            margin-top: 10px;
+            margin-left: -1.8em;
+        }
+
+        .part-droite-sec5 .bloc-Moustapha p{
+            margin-left: -2.4em;
+        }
+
+        .navigation-slite{
+            display: none;
+        }
+
+        .part-droite-sec5 .bloc-Saliou{
+            width: 320px;
+            height: 120px;
+            margin-left: 6.5em;
+            padding-top: 11em;
+        }
+
+        /* fin section5 */
+
+        .section6{
+            width: 430px;
+            height: 500px;
+            margin-top: -40em;
+        } 
+
+        .double-sponsor-restant{
+            margin-left: 4em;
+            margin-top: -15em;
+        }
+
+        .double-sponsor{
+            margin-left: 7em;
+            margin-top: -14.5em;
+        }
+
+        /* fin section6 */
+
+        .section7{
+            width: 430px;
+            height: 610px;
+            margin: 0;
+        }
+
+        .bloc-section7{
+            width: 430px;
+        }
+
+        .bloc-bg-section7{
+            width: 430px;
+            height: 600px;
+            margin: 0;
+        }
+
+        .bloc-bg-section7 h3{
+            width: 80%;
+            height: 150px;
+            font-size: 25px;
+            margin-top: 0px;
+            padding-top: 3em;
+            text-align: center;
+        }
+
+        .bloc-input{
+            width: 300px;
+            margin-left: 4em;
+            margin-top: 9em;
+        }
+
+
+        .bloc-Subscribe{
+            margin-top: 13em;
+            margin-right: 8em;
+        }
+        .bloc-Subscribe button{
+            position: absolute;
+            width: 150px;
+            left: 9em;
+            top: 24em;
+            z-index: 10;
+            margin: 0;
+        }
+
+        .bloc-design-sec7 .design1-sec7{
+            position: absolute;
+            top: 11em;
+            left: -7em;
+        }
+
+        .place-items-en img{
+            margin-top: 9em;
+        }
+
+        .design-envoie{
+            position: absolute;
+            margin-right: -35px;
+        }
+
+        /* fin section 7*/
+
+        .section8{
+            width: 430px;
+            height: 500px;
+        }
+
+        .bloc-section8{
+            width: 430px;
+            height: 450px;
+        }
+
+        .bloc-3parties-section8{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bloc1-sec8{
+            width: 70%;
+            margin-left: 3em;
+            margin-top: 0;
+        }
+
+        .bloc1-sec8 h2{
+            margin: auto;
+            margin-left: 2em;
+        }
+
+        .bloc1-sec8 p{
+            margin-left: 3.3em;
+            text-align: center;
+        }
+
+        .bloc2-sec8{
+            width: 420px;
+            margin-left: 40px;
+        }
+
+        .bloc3-sec8{
+            width: 430px;
+        }
+
+        .bloc-reseaux{
+            width: 200px;
+            margin-left: 9em;
+        }
+
+        .bloc-application{
+            margin-left: 8em;
+        }
+
+        .bloc-application p{
+            margin-left: 1.5em;
+        }
+
+        .application{
+            margin-left: 0.5em;
+        }
 
 }

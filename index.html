@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@flaticon/flaticon-uicons/css/all/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -18,20 +19,20 @@
         rel="stylesheet">
 </head>
 
-<body class="min-w-[1030px] ">
+<body class="contenu_principal"> <!--min-w-[1030px]-->
 
-    <div class="">
-        <div class="design container  mt-0 h-48 m-auto">
+    <div class="nav-section">
+        <div class="design_container mt-0 h-48 m-auto">
             <img src="images/Decore.svg" alt="Décoration" class="w-full max-w-[600px] mx-auto ">
         </div>
 
-        <header class="-mt-48  mr-13 m-auto">
+        <header class="barre-de-nav -mt-48  mr-13 m-auto">
             <nav class="container px-6 py-4 flex items-center justify-between relative z-10 m-auto">
                 <div class="logo">
                     <img src="images/Sec1/Logo.svg" alt="Logo" class="h-8">
                 </div>
-                <div class="menu-navigation -mr-13">
-                    <ul class="flex space-x-8">
+                <div class="menu-navigation bloc-nav -mr-13">
+                    <ul class="flex menu space-x-8">
                         <li><a href="#"
                                 class="text-gray-700 px-1 py-1 hover:bg-[#F1A501] rounded-md transition-colors">Destination</a>
                         </li>
@@ -56,13 +57,25 @@
                                 EN <i class="fa-solid fa-angle-down fa-2xs ml-1"></i>
                             </a>
                             <ul id="lang-menu"
-                                class="absolute left-0 top-full mt-2 w-32 bg-white shadow-lg rounded hidden">
-                                <li class="px-1 py-2 hover:bg-[#F1A501] cursor-pointer"><a href="#">FR</a></li>
-                                <li class="px-1 py-2 hover:bg-[#F1A501] cursor-pointer"><a href="#">ESP</a></li>
+                                class="sous-menu-langue absolute left-0 top-full mt-2 w-32 bg-white shadow-lg rounded hidden">
+                                <li class="px-1 py-2 hover:bg-[#F1A501] cursor-pointer"><a href="#"
+                                        data-lang="FR">FR</a></li>
+                                <li class="px-1 py-2 hover:bg-[#F1A501] cursor-pointer"><a href="#"
+                                        data-lang="ESP">ESP</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
+
+                <button class="menu-resp" aria-label="Ouvrir le menu">
+                    <span class="material-symbols-outlined">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                            fill="#000000">
+                            <path
+                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                        </svg>
+                    </span>
+                </button>
             </nav>
         </header>
     </div>
@@ -70,17 +83,19 @@
     <main>
         <section class="section1 flex justify-center">
             <div class="bloc-gauche">
-                <p class="font-poppins text-[20px] font-[700] text-[#DF6951] w-[410px] h-[30px]">Best Destinations
+                <p class="para-titre-sec1 font-poppins text-[20px] font-[700] text-[#DF6951] w-[410px] h-[30px]">Best
+                    Destinations
                     around the world</p>
-                <h1 class="titre mt-4 mb-5">Travel, enjoy and live a new and full life</h1>
-                <p class="para2 font-poppins text-[16px] font-[500] text-[#5E6282]">Built Wicket longer admire do barton
+                <h1 class="titre-sec1 mt-4 mb-5">Travel, enjoy and live a new and full life</h1>
+                <p class="para2-sec1 font-poppins text-[16px] font-[500] text-[#5E6282]">Built Wicket longer admire do
+                    barton
                     vanity itself do in it. Preferred to sportsmen it engrossed
                     listening. Park gate sell they west hard for the.</p>
-                <div class="flex">
-                    <a href="#" class="font-Verdana px-3 py-3 pt-2 mr-7 bg-[#F1A501]  text-white shadow-[0px_20px_35px_0px_#F1A50126]
+                <div class="button-sec1 flex">
+                    <a href="#" class="button-jaune font-Verdana px-3 py-3 pt-2 mr-7 bg-[#F1A501]  text-white shadow-[0px_20px_35px_0px_#F1A50126]
                         rounded-lg cursor-pointer">Find
                         out more</a>
-                    <div class="flex play-bloc">
+                    <div class="bloc-play-sec1 flex play-bloc">
                         <button><a href="#"><img src="images/playyy.svg" alt=""
                                     class="cursor-pointer shadow-[0px_15px_30px_0px_#DF69514D]"></a></button>
                         <p class="font-poppins text-[17px] font-[500] text-[#686D77]"> Play Demo </p>
@@ -88,24 +103,25 @@
                 </div>
             </div>
 
-            <div class="bloc-droite">
+            <div class="bloc-droite-sec1">
                 <img src="images/Sec1/Image-femme.svg" alt="">
             </div>
         </section>
 
         <section class="section2 mt-10 mb-10 ">
-            <div class="section2 w-[1228px] h-[525px] m-auto">
+            <div class="contenu-section2 w-[1228px] h-[525px] m-auto">
 
                 <div class="part-1-sec2 flex space-x-235">
-                    <div class="w-full max-w-[40%]  mx-auto text-center ml-92">
+                    <div class="bloc-part-1-sec2 w-full max-w-[40%]  mx-auto text-center ml-92">
                         <p class="font-poppins text-[13px] font-[600] text-[#5E6282] -mb-3">CATEGORY</p>
                         <h2 class="titre-section2 text-[18px] font-[600] text-[#14183E] ">We Offer Best Services</h2>
                     </div>
-                    <img src="images/Sec2/++++.svg" alt="" class="+++ size-30">
+                    <img src="images/Sec2/++++.svg" alt="" class="design-sec2 +++ size-30">
                 </div>
 
                 <div class="part2-sec2 flex mt-15 justify-center gap-x-20">
-                    <div class="bloc1-section2">
+
+                    <div class="bloc1-section2 entaine">
                         <div class="bloc-img-titre-para w-[190px] h-[227px] ">
                             <img src="images/Sec2/img1-sec2.svg" alt=""
                                 class="img-section2-parti2 w-[92px] h-[78px] m-auto">
@@ -119,14 +135,14 @@
                         </div>
                     </div>
 
-                    <div class="relative flex items-center justify-center w-[302px] h-[349px] ">
+                    <div class="flights relative flex items-center justify-center w-[302px] h-[349px] ">
 
                         <div
-                            class="absolute bottom-[68px] left-[2px] w-16 h-16 bg-[#E86A50] rounded-tl-[20px] rounded-br-xl -z-10">
+                            class="designe-color absolute bottom-[68px] left-[2px] w-16 h-16 bg-[#E86A50] rounded-tl-[20px] rounded-br-xl -z-10">
                         </div>
 
                         <div
-                            class="w-[250px] h-[300px] bg-white shadow-lg rounded-xl  flex flex-col items-center text-center -mt-33">
+                            class="bloc-flights w-[250px] h-[300px] bg-white shadow-xl rounded-xl  flex flex-col items-center text-center -mt-33">
                             <img src="images/Sec2/img2-sec2.svg" alt="Avion" class="-mt-2">
                             <h3 class="w-[190px] text-[18px] font-[600] text-[#1E1D4C] leading-[27.24px] -mt-7">Best
                                 Flights
@@ -151,7 +167,7 @@
                         </div>
                     </div>
 
-                    <div class="bloc4-section2">
+                    <div class="bloc4-section2 parametre">
                         <div class="bloc-img-titre-para w-[181px] h-[216px] ">
                             <img src="images/Sec2/img4-sec2.svg" alt=""
                                 class="img-section2-parti2 w-[92px] h-[78px] m-auto">
@@ -170,32 +186,32 @@
         </section>
 
         <section class="section3 mt-10 mb-10 ">
-            <div class="section3 w-[1102px] h-[617px] m-auto">
+            <div class="bloc-section3 w-[1102px] h-[617px] m-auto">
 
                 <div class="part-1-sec3 flex space-x-235">
-                    <div class="w-full max-w-[40%]  mx-auto text-center ml-82">
+                    <div class="bloc-part-1-sec3 w-full max-w-[40%]  mx-auto text-center ml-82">
                         <p class="font-poppins text-[13px] font-[600] text-[#5E6282] -mb-3">Top Selling</p>
                         <h2 class="titre-section2 text-[18px] font-[600] text-[#14183E] ">Top Destinations</h2>
                     </div>
                 </div>
 
-                <div class="flex ml-20 mt-10 m-auto ">
+                <div class="part-2-sec3 flex ml-20 mt-10 m-auto ">
 
-                    <div class="part-2-sec3 ">
+                    <div class="bloc-part-2-sec3">
                         <div
-                            class="bloc-1-sec3 w-[315px] h-[457px] transition duration-300 ease-in-out transform hover:-translate-y-5">
-                            <div class="card-destination rounded-md">
+                            class="bloc-part-2-sec3 w-[315px] h-[457px] transition duration-300 ease-in-out transform hover:-translate-y-5">
+                            <div class="card-destination italie rounded-md">
                                 <img src="images/Sec3/img1-sec3.svg" alt="" class="w-[354px] h-[457px]  relative">
                                 <div>
                                     <div
-                                        class="Rome-$ bg-white flex absolute z-10 ml-13 -mt-56 px-[4.1em] py-2 max-w-[314px]">
+                                        class="Rome bg-white flex absolute z-10 ml-13 -mt-56 px-[4.1em] py-2 max-w-[314px]">
                                         <p class="font-poppins text-[18px] font-[500] text-[#5E6282] -ml-15">Rome, Italy
                                         </p>
                                         <p class="font-poppins text-[18px] font-[500] text-[#5E6282] -mr-14 ml-13">
                                             $5.42k</p>
                                     </div>
                                     <div
-                                        class="Rome-$ bg-white flex absolute z-10 ml-13 -mt-46 px-[3.5em] py-3 rounded-br-xl rounded-bl-xl ">
+                                        class="Rome Rome-Italie bg-white flex absolute z-10 ml-13 -mt-46 px-[3.5em] py-3 rounded-br-xl rounded-bl-xl ">
                                         <img src="images/Sec3/Vector.svg" alt="" class="-ml-10 fill">
                                         <p
                                             class="font-poppins text-[18px] font-[500] text-[#5E6282] ml-10 -mr-[14.5px]">
@@ -209,7 +225,7 @@
 
                     <div class="part-2-sec3 ">
                         <div
-                            class="bloc-1-sec3 w-[315px] h-[457px] transition duration-300 ease-in-out transform hover:-translate-y-5">
+                            class="bloc-part-2-sec3 w-[315px] h-[457px] transition duration-300 ease-in-out transform hover:-translate-y-5">
                             <div class="card-destination rounded-md">
                                 <img src="images/Sec3/img2-sec3.svg" alt="" class="w-[314px] h-[457px]  relative">
                                 <div>
@@ -234,7 +250,7 @@
                     </div>
 
                     <div class="part-2-sec3 transition duration-300 ease-in-out transform hover:-translate-y-5">
-                        <div class="bloc-1-sec3 w-[315px] h-[457px] ">
+                        <div class="bloc-part-2-sec3 w-[315px] h-[457px] ">
                             <div class="card-destination rounded-md">
                                 <img src="images/Sec3/img3-sec3.svg" alt="" class="w-[314px] h-[457px]   ">
                                 <div>
@@ -258,8 +274,18 @@
 
                     </div>
 
-                    <div class="">
+                    <div class="griland">
                         <img src="images/Sec3/Decore.svg" alt=""
+                            class="w-[202px] h-[217px] relative -bottom-[5em] -left-[5em] -z-10 ">
+                    </div>
+
+                    <div class="plane">
+                        <img src="images/Sec3/avion.png" alt=""
+                            class="w-[202px] h-[217px] relative -bottom-[5em] -left-[5em] -z-10 ">
+                    </div>
+
+                    <div class="passport">
+                        <img src="images/Sec3/passeport.svg" alt=""
                             class="w-[202px] h-[217px] relative -bottom-[5em] -left-[5em] -z-10 ">
                     </div>
 
@@ -271,13 +297,13 @@
         <section class="section4 mt-10 mb-20 ">
             <div class="bloc-sec4 flex gap-x-30 w-[1114px] h-[492px] m-auto">
                 <div class="part-gauche">
-                    <div>
+                    <div class="bloc-1-part-gauche">
                         <p class="w-[126px] h-[27px] font-poppins text-[18px] font-[600] text-[#5E6282] text-center">
                             Easy and Fast</p>
                         <h2 class="titre-sec4 w-[511px] h-[130px] text-[50px] font-[700] text-[#14183E] leading-[1.3]">
                             Book your next trip in 3 easy steps</h2>
                     </div>
-                    <div class="w-[395px] h-[289px]">
+                    <div class="trois-theme w-[395px] h-[289px]">
 
                         <div class="flex mb-9 mt-8">
                             <div class=""><img src="images/Sec4/img1-sec4.svg" alt=""
@@ -373,25 +399,26 @@
                     </div>
 
                 </div>
+            </div>
         </section>
 
         <section class="section5 mt-10 mb-20 flex justify-center">
 
-            <div class="w-[1165px] h-[356px] ml-[4.7em] flex gap-x-5">
+            <div class="bloc-section5 w-[1165px] h-[356px] ml-[4.7em] flex gap-x-5">
 
                 <div class="part-gauche-sec5">
                     <p class="w-[128px] h-[27px] font-poppins text-[18px] font-[600] text-[#5E6282]">Testimonials</p>
                     <h2
                         class="titre-sec5 w-[409px] h-[130px] text-[50px] font-[700] text-[#14183E] leading-[1.5] mb-[2em]">
                         What people say about Us.</h2>
-                    <img src="images/Sec5/slite.svg" alt="" class="">
+                    <img src="images/Sec5/slite.svg" alt="" class="pointier ">
                 </div>
 
                 <div class="part-droite-sec5 w-[669px] h-[356px] relative">
 
-                    <div class="relative ">
+                    <div class="bloc-part-droite-sec5 relative ">
 
-                        <div class="w-[502px] h-[232px]  bg-[#F7F7F7] ml-42 mt-31 relative">
+                        <div class="bloc-Saliou w-[502px] h-[232px]  bg-[#F7F7F7] ml-42 mt-31 relative">
                             <h3
                                 class="w-[157px] h-[27px] px-4 absolute bottom-8 font-poppins text-[18px] font-[600] text-[#5E6282]">
                                 Saliou Ndiaye</h3>
@@ -403,22 +430,22 @@
                         <img src="images/Sec5/Image.svg" alt="" class="pt-4 absolute left-[20px] -top-[130px] z-10">
 
                         <div
-                            class="w-[541px] h-[229px] bg-white outline-2 outline-offset-2 absolute left-[70px] -top-[70px] outline-[#F7F7F7] rounded-xl">
+                            class="bloc-Moustapha w-[541px] h-[229px] bg-white outline-2 outline-offset-2 absolute left-[70px] -top-[70px] outline-[#F7F7F7] rounded-xl">
                             <p
-                                class="w-[422px] h-[96px] font-poppins text-[16px] font-[500] text-[#5E6282] pt-[2em] pl-[4.5em]">
+                                class="para1 w-[422px] h-[96px] font-poppins text-[16px] font-[500] text-[#5E6282] pt-[2em] pl-[4.5em]">
                                 “On the Windows talking painted pasture yet its express parties use. Sure last upon he
                                 same as knew next. Of believed or diverted no.”</p>
                             <h3
                                 class="w-[401px] h-[27px] font-poppins text-[18px] font-[600] text-[#5E6282] pt-[2em]  pl-[4em]">
                                 Moustapha Diop</h3>
                             <p
-                                class="w-[416px] h-[21px] font-poppins text-[14px] font-[500] text-[#5E6282] pt-[2em]  pl-[5.2em]">
+                                class=" w-[416px] h-[21px] font-poppins text-[14px] font-[500] text-[#5E6282] pt-[2em]  pl-[5.2em]">
                                 Thiès, Senegal</p>
                         </div>
 
                     </div>
 
-                    <div class="w-[14px] h-[71.5px] absolute -right-[60px] bottom-[140px]">
+                    <div class="navigation-slite w-[14px] h-[71.5px] absolute -right-[60px] bottom-[140px]">
                         <a href="#"><img src="images/Sec5/Vector-haut.svg" alt="" class="mb-10"></a>
                         <a href="#"><img src="images/Sec5/Vector-bas.svg" alt=""></a>
                     </div>
@@ -428,43 +455,56 @@
 
         </section>
 
-        <section class="section6 -mt-60 mb-20 flex justify-center">
-            <div class="w-[1073px] h-[762px] flex justify-between items-center">
+        <!-- <section class="section6 -mt-60 mb-20 flex justify-center">
+            <div class="bloc-section6 w-[1073px] h-[762px] flex justify-between items-center">
                 <a href="#"><img src="images/Sec6/part1.svg" alt="" class="w-[130px] h-[130px] "></a>
                 <a href="#"><img src="images/Sec6/part2.svg" alt="" class="w-[173px] h-[110px]"></a>
                 <a href="#"><img src="images/Sec6/part3.svg" alt="" class="w-[241px] h-[162px]"></a>
                 <a href="#"><img src="images/Sec6/part4.svg" alt="" class="w-[162px] h-[32px]"></a>
                 <a href="#"><img src="images/Sec6/part5.svg" alt="" class="w-[94px] h-[21px]"></a>
             </div>
+        </section> -->
+
+        <section class="section6 -mt-60 mb-20 flex justify-center">
+            <div
+                class="bloc-section6 w-[1073px] h-[762px] grid grid-cols-3 gap-1 md:flex md:justify-between items-center">
+                <a href="#"><img src="images/Sec6/part1.svg" alt="" class="w-[130px] h-[130px]"></a>
+                <a href="#"><img src="images/Sec6/part2.svg" alt="" class="w-[173px] h-[110px]"></a>
+                <a href="#"><img src="images/Sec6/part3.svg" alt="" class="w-[241px] h-[162px]"></a>
+                <a href="#"><img src="images/Sec6/part4.svg" alt=""
+                        class="w-[162px] h-[32px] double-sponsor-restant"></a>
+                <a href="#"><img src="images/Sec6/part5.svg" alt="" class="w-[94px] h-[21px] double-sponsor"></a>
+            </div>
         </section>
 
         <section class="section7 -mt-60 mb-30 flex justify-center">
-            <div class="w-[1356px] h-[390px] relative">
-                <div class="w-[1170px] h-[407px] ml-[30px] rounded-tl-[130px] relative  bg-[#f3f0ff]">
+            <div class="bloc-section7 w-[1356px] h-[390px] relative max-w-[1270px]">
+                <div class="bloc-bg-section7 w-[1170px] h-[407px] ml-[30px] rounded-tl-[130px] relative  bg-[#f3f0ff]">
                     <h3
                         class="w-[859px] h-[108px] font-poppins text-[33px] font-[600] text-[#5E6282] text-center m-auto pt-[60px]">
                         Subscribe to get information, latest news and other interesting offers about Jadoo</h3>
                     <div class="flex ">
                         <div
-                            class="w-[421px] h-[68px] flex gap-x-2 m-auto items-center bg-white px-4 py-4 rounded-xl mt-[130px] ml-[18em] z-10">
+                            class="bloc-input w-[421px] h-[68px] flex gap-x-2 m-auto items-center bg-white px-4 py-4 rounded-xl mt-[130px] ml-[18em] z-10">
                             <label for=""><img src="images/Sec7/icone-mail.svg" alt=""></label>
                             <input type="email" placeholder="Your email" class="pb-1 outline-none w-[400px]">
                         </div>
-                        <div class="w-[180px] h-[68px] mt-[8.3em] -ml-[12em] ">
+                        <div class="bloc-Subscribe w-[180px] h-[68px] mt-[8.3em] -ml-[12em] ">
                             <button
-                                class="bg-subscribe px-8 py-5 absolute right-[300px] text-white rounded-xl cursor-pointer"><a
-                                    href="#">Subscribe</a></button>
+                                class="bg-subscribe px-8 py-5 absolute right-[300px] text-white rounded-xl cursor-pointer">
+                                <a href="#">Subscribe</a>
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="mx-auto">
-                    <img src="images/Sec7/Mask Group.svg" alt="" class="absolute top-[45px] -left-[50px]">
-                    <img src="images/Sec7/Mask Group 2.svg" alt="" class="absolute top-[0] right-[64px]">
-                    <img src="images/Sec7/envoie.svg" alt="" class="absolute -top-[20px] right-[40px]">
+                <div class="bloc-design-sec7 mx-auto">
+                    <img src="images/Sec7/Mask Group.svg" alt="" class="absolute top-[45px] -left-[50px] design1-sec7">
+                    <img src="images/Sec7/Mask Group 2.svg" alt="" class="absolute top-[0] right-[64px] design2-sec7">
+                    <img src="images/Sec7/envoie.svg" alt="" class="absolute -top-[20px] right-[40px] design-envoie">
                 </div>
 
-                <div class=" place-items-en">
+                <div class="place-items-en">
                     <img src="images/Sec7/Design+.svg" alt="" class="w-[130px] h-[120px] absolute right-0 top-82">
                 </div>
 
@@ -473,81 +513,135 @@
         </section>
 
         <section class="section8 mt-30 mb-2 ">
-            <div class="flex justify-center">
-                <div class="w-[1170px] h-[250px] flex -ml-[35px] justify-between items-center ">
+            <div class="bloc-section8 flex justify-center">
+                <div class="bloc-3parties-section8 w-[1170px] h-[250px] flex -ml-[35px] justify-between items-center ">
 
-                    <div class="w-[207px] h-[133px] -mt-[50px]">
+                    <div class="bloc1-sec8 w-[207px] h-[133px] -mt-[50px]">
                         <h2 class="w-[152px] h-[66px] font-poppins text-[44px] font-[500] text-[#181E4B]">Jadoo</h2>
-                        <p class="w-[207px] h-[48px] font-poppins text-[13px] font-[500] text-[#5E6282]">Book your trip in
+                        <p class="w-[207px] h-[48px] font-poppins text-[13px] font-[500] text-[#5E6282]">Book your trip
+                            in
                             minute, get full Control for much longer.</p>
                     </div>
-    
-                    <div class="w-[474px] h-[153px] flex justify-between items-center">
-    
+
+                    <div class="bloc2-sec8 w-[474px] h-[153px] flex justify-between items-center">
+
                         <div class="w-[108px] h-[151px]">
                             <h3 class="w-[108px] h-[26px] font-poppins text-[21px] font-[700] text-[#080809] mb-[10px]">
                                 Company</h3>
-                            <p class="w-[55px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282] mb-[5px]">About
+                            <p class="w-[55px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282] mb-[5px]">
+                                About
                             </p>
-                            <p class="w-[72px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282] mb-[5px]">Careers
+                            <p class="w-[72px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282] mb-[5px]">
+                                Careers
                             </p>
                             <p class="w-[61px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]">Mobile</p>
                         </div>
-    
+
                         <div class="w-[89px] h-[151px]">
                             <h3 class="w-[88px] h-[26px] font-poppins text-[21px] font-[700] text-[#080809] mb-[10px]">
                                 Contact</h3>
                             <p class="w-[86px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]  mb-[5px]">
                                 Help/FAQ</p>
-                            <p class="w-[48px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]  mb-[5px]">Press
+                            <p class="w-[48px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]  mb-[5px]">
+                                Press
                             </p>
                             <p class="w-[74px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]">Mobile</p>
                         </div>
-    
+
                         <div class="w-[114px] h-[153px]">
-                            <h3 class="w-[55px] h-[26px] font-poppins text-[21px] font-[700] text-[#080809] mb-[10px]">More
+                            <h3 class="w-[55px] h-[26px] font-poppins text-[21px] font-[700] text-[#080809] mb-[10px]">
+                                More
                             </h3>
                             <p class="w-[95px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]  mb-[5px]">
                                 Airlinefees</p>
                             <p class="w-[57px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]  mb-[5px]">
                                 Airline</p>
-                            <p class="w-[114px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]">Low fare tips
+                            <p class="w-[114px] h-[22px] font-poppins text-[18px] font-[500] text-[#5E6282]">Low fare
+                                tips
                             </p>
                         </div>
-    
+
                     </div>
-    
-                    <div class="w-[214px] h-[147px] gap-x-7">
-                        <div class="w-[177px] h-[45px] flex gap-x-7">
-                            <a href="#" class="w-[41px] h-[41px] bg-[#dddddd] flex justify-center items-center rounded-[100%]"><img src="images/Sec8/Facebook Icon.svg" alt="" class="w-[17px] h-[17px]"></a>
-                            <a href="#" class="insta w-[45px] h-[45px] flex justify-center items-center rounded-[100%]"><img src="images/Sec8/instagram 1.svg" alt="" class="w-[16px] h-[16px]"></a>
-                            <a href="#" class="w-[41px] h-[41px] bg-[#dddddd] flex justify-center items-center rounded-[100%]"><img src="images/Sec8/twiter.svg" alt="" class="w-[16px] h-[13px]"></a>
+
+                    <div class="bloc3-sec8 w-[214px] h-[147px] gap-x-7">
+                        <div class="bloc-reseaux w-[177px] h-[45px] flex gap-x-7">
+                            <a href="#"
+                                class="w-[41px] h-[41px] bg-[#dddddd] flex justify-center items-center rounded-[100%]"><img
+                                    src="images/Sec8/Facebook Icon.svg" alt="" class="w-[17px] h-[17px]"></a>
+                            <a href="#"
+                                class="insta w-[45px] h-[45px] flex justify-center items-center rounded-[100%]"><img
+                                    src="images/Sec8/instagram 1.svg" alt="" class="w-[16px] h-[16px]"></a>
+                            <a href="#"
+                                class="w-[41px] h-[41px] bg-[#dddddd] flex justify-center items-center rounded-[100%]"><img
+                                    src="images/Sec8/twiter.svg" alt="" class="w-[16px] h-[13px]"></a>
                         </div>
-                        <div class="w-[214px] h-[76px] mt-4 ">
-                            <p class="w-[173px] h-[25px] font-poppins text-[20px] font-[500] text-[#5E6282]">Discover our app</p>
-                            <div class="flex mt-4 gap-x-2">
-                                <a href="#" class="w-[100px] h-[35px]"><img src="images/Sec8/Google Play.svg" alt="" ></a>
-                                <a href="#" class="w-[100px] h-[35px]"><img src="images/Sec8/apple (2) 1.svg" alt=""></a>
+                        <div class="bloc-application w-[214px] h-[76px] mt-4 ">
+                            <p class="w-[173px] h-[25px] font-poppins text-[20px] font-[500] text-[#5E6282]">Discover
+                                our app</p>
+                            <div class="application flex mt-4 gap-x-2">
+                                <a href="#" class="w-[100px] h-[35px]"><img src="images/Sec8/Google Play.svg"
+                                        alt=""></a>
+                                <a href="#" class="w-[100px] h-[35px]"><img src="images/Sec8/apple (2) 1.svg"
+                                        alt=""></a>
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
 
             <div class="flex justify-center">
-                <h3>&copy; 2025 <span class="text-[#DF6951] text-[17px]">DiopMoustapha</span>. Tous droits réservés.</h3>
+                <h3>&copy; 2025 <span class="text-[#DF6951] text-[17px]">DiopMoustapha</span>. Tous droits réservés.
+                </h3>
             </div>
         </section>
-        
+
     </main>
 
+
+    <script>
+        document.querySelector('.menu-resp').addEventListener('click', function () {
+            document.querySelector('.bloc-nav').classList.toggle('show');
+        });
+    </script>
 
     <script>
         document.getElementById("lang-toggle").addEventListener("click", function (e) {
             e.preventDefault();
             document.getElementById("lang-menu").classList.toggle("hidden");
         });
+
+        const langOptions = document.querySelectorAll("#lang-menu a");
+        langOptions.forEach(option => {
+            option.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                // Récupérer la langue sélectionnée (FR ou ESP)
+                const selectedLang = this.getAttribute("data-lang");
+
+                // Mettre à jour le texte du bouton avec la langue sélectionnée
+                const langToggle = document.getElementById("lang-toggle");
+                langToggle.innerHTML = `${selectedLang} <i class="fa-solid fa-angle-down fa-2xs ml-1"></i>`;
+
+                // Masquer le menu après la sélection
+                document.getElementById("lang-menu").classList.add("hidden");
+
+                // Ajouter la logique pour changer la langue du site
+                changeLanguage(selectedLang);
+            });
+        });
+
+        // Fonction pour changer la langue (à adapter selon vos besoins)
+        function changeLanguage(lang) {
+            console.log(`Changement de langue en ${lang}`);
+            // Exemple : rediriger l'utilisateur vers une page spécifique
+            // window.location.href = `/change-lang/${lang}`;
+
+            // Ou charger du contenu dynamique en fonction de la langue
+            // fetch(`/api/change-lang/${lang}`).then(...);
+        }
     </script>
+
 </body>
+
 </html>
