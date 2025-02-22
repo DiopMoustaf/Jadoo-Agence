@@ -429,13 +429,6 @@ button img {
             
         }
 
-
-
-        .Rome-Italie img{
-                width: 17px;
-                margin-left: 2em;
-        }
-
         .Rome-Italie{
             padding: 0;
             display: flex;
@@ -444,12 +437,15 @@ button img {
 
         }
 
-        .Rome-Italie p{
-            font-size: 19px;
-            width: 50%;
-            margin-left: 20px;
-            margin-right: 0;
+        .Rome-Italie img{
+                width: 17px;
+                margin-left: 1em;
+        }
 
+        .Rome-Italie p{
+            font-size: 18px;
+            width: 100%;
+            margin-left: 0;
         }
 
         .griland{
