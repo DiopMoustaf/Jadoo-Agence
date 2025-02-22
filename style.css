@@ -323,17 +323,17 @@ button img {
         margin-top: 30px;
     }
 
-    .bloc-img-titre-para img,.bloc-img-titre-para img,.bloc-img-titre-para img{
-        width: 150px;
-        height: 100px;
+    .bloc-img-titre-para img{
+        width: 130px;
+        height: 70px;
     }
 
-    .bloc-img-titre-para h3,.bloc-img-titre-para h3,.bloc-img-titre-para h3{
+    .bloc-img-titre-para h3{
         font-size: 25px;
     }
     
-    .bloc-img-titre-para p,.bloc-img-titre-para p,.bloc-img-titre-para p{
-        font-size: 27px;
+    .bloc-img-titre-para p{
+        font-size: 25px;
         width: 280px;
         height: 100px;
         margin-left: -50px;
@@ -357,7 +357,7 @@ button img {
     }
 
     .bloc-flights img{
-        width: 200px;
+        width: 180px;
     }
 
     .bloc-flights h3{
@@ -426,6 +426,7 @@ button img {
             width: 208px;
             height: 50px;
             margin-left: 53px;
+            
         }
 
 
@@ -435,9 +436,11 @@ button img {
         }
 
         .Rome-Italie p{
-            width: 250px;
-            margin-left: 40px;
-            margin-right: -20px;
+            width: 100%;
+            margin-left: 20px !important;
+            margin-right: 0;
+            background-color: #F1A501;
+
         }
 
         .griland{
