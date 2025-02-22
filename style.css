@@ -561,20 +561,20 @@ button img {
 
         .part-gauche-sec5 p{
             width: 90%;
-            margin-left: 10em;
+            text-align: center;
         }
 
         .part-gauche-sec5 h2{
             width: 70%;
             font-size: 30px;
             text-align: center;
-            margin-left: 2.3em;
+            margin-left: 1.5em;
             position: relative;
         }
 
         .pointier{
             position: absolute;
-            bottom: -660%;
+            bottom: -517%;
             margin-left: 10em;
         }
 
@@ -609,16 +609,15 @@ button img {
             margin-left: -2.4em;
         }
 
+        .navigation-slite{
+            display: none;
+        }
 
         .part-droite-sec5 .bloc-Saliou{
             width: 320px;
             height: 120px;
             margin-left: 6.5em;
             padding-top: 11em;
-        }
-
-        .navigation-slite{
-            display: none;
         }
 
         /* fin section5 */
