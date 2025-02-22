@@ -438,7 +438,7 @@ button img {
         }
 
         .Rome-Italie img{
-                width: 17px;
+                width: 20px;
                 margin-left: 1em;
         }
 
@@ -451,7 +451,7 @@ button img {
         .griland{
             /* display: none; */
             position: absolute;
-            bottom: -158em;
+            bottom: -170em;
             left: 16em;
             width: 120px;
             height: 200px;
