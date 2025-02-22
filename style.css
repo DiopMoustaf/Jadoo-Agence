@@ -194,7 +194,7 @@ button img {
         display: flex;
         flex-direction: column;
         background: linear-gradient(rgb(245, 222, 179, 0.5), rgb(223, 105, 81, 0.6)),
-            url(Images/Sec1/Image-femme.svg);
+            url(images/Sec1/Image-femme.svg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
