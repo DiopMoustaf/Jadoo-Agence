@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="contenu_principal"> <!--min-w-[1030px]-->
@@ -82,7 +83,7 @@
 
     <main>
         <section class="section1 flex justify-center">
-            <div class="bloc-gauche">
+            <div class="bloc-gauche animate__animated animate__backInLeft ">
                 <p class="para-titre-sec1 font-poppins text-[20px] font-[700] text-[#DF6951] w-[410px] h-[30px]">Best
                     Destinations
                     around the world</p>
@@ -103,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="bloc-droite-sec1">
+            <div class="bloc-droite-sec1 animate__animated animate__pulse  animate__delay-1s animate__repeat-2">
                 <img src="images/Sec1/Image-femme.svg" alt="">
             </div>
         </section>
@@ -135,7 +136,7 @@
                         </div>
                     </div>
 
-                    <div class="flights relative flex items-center justify-center w-[302px] h-[349px] ">
+                    <div class="flights relative flex items-center justify-center w-[302px] h-[349px] animated-element opacity-0 animate__animated" data-animation="animate__fadeInDown">
 
                         <div
                             class="designe-color absolute bottom-[68px] left-[2px] w-16 h-16 bg-[#E86A50] rounded-tl-[20px] rounded-br-xl -z-10">
@@ -305,7 +306,7 @@
                     </div>
                     <div class="trois-theme w-[395px] h-[289px]">
 
-                        <div class="flex mb-9 mt-8">
+                        <div class="flex mb-9 mt-8 animated-element opacity-0 animate__animated" data-animation="animate__fadeInDown">
                             <div class=""><img src="images/Sec4/img1-sec4.svg" alt=""
                                     class="w-[47px] h-[48px] bg-[#F0BB1F] px-3 py-3 rounded-[13px] mt-1"></div>
                             <div class="ml-3 -pt-4">
@@ -317,7 +318,7 @@
                             </div>
                         </div>
 
-                        <div class="flex mb-9">
+                        <div class="flex mb-9 animated-element opacity-0 animate__animated" data-animation="animate__fadeInLeft">
                             <div class=""><img src="images/Sec4/img2-sec4.svg" alt=""
                                     class="w-[47px] h-[48px] bg-[#F15A2B] px-3 py-3 rounded-[13px] mt-1"></div>
                             <div class="ml-3 -pt-4">
@@ -329,7 +330,7 @@
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <div class="flex animated-element opacity-0 animate__animated" data-animation="animate__fadeInRight">
                             <div class=""><img src="images/Sec4/img3-sec4.svg" alt=""
                                     class="w-[47px] h-[48px] bg-[#006380] px-3 py-3 rounded-[13px] mt-1"></div>
                             <div class="ml-3 -pt-4">
@@ -343,7 +344,7 @@
 
                     </div>
                 </div>
-                <div class="part-droite relative w-[485px] h-[439px] mt-[50px]">
+                <div class="part-droite relative w-[485px] h-[439px] mt-[50px] animated-element opacity-0 animate__animated" data-animation="animate__fadeInUp">
 
                     <div
                         class="arriere-plan-bleu absolute top-0 -left-5 w-[350px] h-[320px] shadow-[90px_-30px_50px_30px_rgba(89,177,230,0.2)] -z-10 border-none">
@@ -377,7 +378,7 @@
                     </div>
 
                     <div
-                        class="bloc2-part-droite-sec4 w-[263px] h-[129px] px-4 py-4 rounded-[15px] absolute top-55 left-66   bg-white">
+                        class="bloc2-part-droite-sec4 w-[263px] h-[129px] px-4 py-4 rounded-[15px] absolute top-55 left-66 bg-white ">
                         <div class="flex">
                             <img src="images/Sec4/img5-sec4.svg" alt="" class="w-[50px] h-[50px]">
                             <div class="ml-3">
@@ -467,7 +468,7 @@
 
         <section class="section6 -mt-60 mb-20 flex justify-center">
             <div
-                class="bloc-section6 w-[1073px] h-[762px] grid grid-cols-3 gap-1 md:flex md:justify-between items-center">
+                class="bloc-section6 w-[1073px] h-[762px] grid grid-cols-3 gap-1 md:flex md:justify-between items-center animated-element opacity-0 animate__animated" data-animation="animate__zoomIn">
                 <a href="#"><img src="images/Sec6/part1.svg" alt="" class="w-[130px] h-[130px]"></a>
                 <a href="#"><img src="images/Sec6/part2.svg" alt="" class="w-[173px] h-[110px]"></a>
                 <a href="#"><img src="images/Sec6/part3.svg" alt="" class="w-[241px] h-[162px]"></a>
@@ -491,7 +492,7 @@
                         </div>
                         <div class="bloc-Subscribe w-[180px] h-[68px] mt-[8.3em] -ml-[12em] ">
                             <button
-                                class="bg-subscribe px-8 py-5 absolute right-[300px] text-white rounded-xl cursor-pointer">
+                                class="bg-subscribe px-8 py-5 absolute right-[300px] text-white rounded-xl cursor-pointer animated-element opacity-0 animate__animated animate__infinite infinite" data-animation="animate__pulse" >
                                 <a href="#">Subscribe</a>
                             </button>
                         </div>
@@ -631,15 +632,29 @@
             });
         });
 
-        // Fonction pour changer la langue (à adapter selon vos besoins)
         function changeLanguage(lang) {
             console.log(`Changement de langue en ${lang}`);
-            // Exemple : rediriger l'utilisateur vers une page spécifique
-            // window.location.href = `/change-lang/${lang}`;
-
-            // Ou charger du contenu dynamique en fonction de la langue
-            // fetch(`/api/change-lang/${lang}`).then(...);
         }
+    </script>
+
+    <script> // Animation
+    document.addEventListener("DOMContentLoaded", function () {
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let animationClass = entry.target.getAttribute("data-animation");
+                entry.target.classList.add(animationClass, "animate__delay-0.90s");
+                entry.target.classList.remove("opacity-0");
+                observer.unobserve(entry.target); // Stoppe l'observation après l'animation
+            }
+        });
+    }, { threshold: 0.3 }); // Déclenche lorsque 30% de l'élément est visible
+
+    document.querySelectorAll(".animated-element").forEach(element => {
+        observer.observe(element);
+    });
+});
+
     </script>
 
 </body>
